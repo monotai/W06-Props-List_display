@@ -3,8 +3,8 @@ function Card({ data }){
         <div className="card">
             <h4>{data.name}</h4>
             <small>{data.title}</small>
+            <a href={data.image.link}><img src={data.image.src} alt={data.image.alt} /></a>
             <p>{data.paragraph}</p>
-            <img src={data.image.src} alt={data.image.alt} />
         </div>
     </>
 }
